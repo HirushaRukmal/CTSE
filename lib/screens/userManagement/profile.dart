@@ -58,7 +58,7 @@ class ProfileScreen extends StatelessWidget {
                           shape: BoxShape.circle,
                         ),
                         child: Image.network(
-                            "https://cdn.pixabay.com/photo/2020/05/17/20/21/cat-5183427_960_720.jpg",
+                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2w35-ywQxAxsVTPs5rHEF2m0b_CBnLHJNgA&usqp=CAU",
                             fit: BoxFit.cover),
                       ),
                     ],
@@ -242,7 +242,7 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
+                padding: EdgeInsets.fromLTRB(25, 25, 0, 0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
