@@ -36,7 +36,7 @@ class SplashScreen extends StatelessWidget {
               Align(
                 alignment: Alignment(0.0, 1.0),
                 child: Text(
-                  "No Hunger",
+                  "Kind Heart",
                   textAlign: TextAlign.start,
                   overflow: TextOverflow.clip,
                   style: TextStyle(

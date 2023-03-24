@@ -82,7 +82,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Text(
-                                "No",
+                                "Kind",
                                 textAlign: TextAlign.start,
                                 overflow: TextOverflow.clip,
                                 style: TextStyle(
@@ -93,7 +93,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 ),
                               ),
                               Text(
-                                "Hunger",
+                                "Heart",
                                 textAlign: TextAlign.start,
                                 overflow: TextOverflow.clip,
                                 style: TextStyle(
