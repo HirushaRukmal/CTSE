@@ -8,6 +8,7 @@ import 'package:kind_heart/screens/postManagement/postList.dart';
 import 'package:kind_heart/screens/postManagement/postListNew.dart';
 import '../../widgets/FlutterVizBottomNavigationBarModel.dart';
 import '../donationManagement/addDonation.dart';
+import '../main/login.dart';
 
 class DashboardScreen extends StatefulWidget {
   @override
@@ -39,29 +40,53 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     borderRadius: BorderRadius.zero,
                     border: Border.all(color: Color(0x4d9e9e9e), width: 1),
                   ),
-                  child: Padding(
-                    padding: EdgeInsets.all(16),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.fromLTRB(0, 60, 0, 0),
-                          child: Text(
-                            "Home",
-                            textAlign: TextAlign.center,
-                            overflow: TextOverflow.clip,
-                            style: TextStyle(
-                              fontWeight: FontWeight.w700,
-                              fontStyle: FontStyle.normal,
-                              fontSize: 34,
-                              color: Color(0xffffffff),
+                  child: Stack(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.all(16),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(0, 100, 0, 0),
+                              child: Text(
+                                "Home",
+                                textAlign: TextAlign.center,
+                                overflow: TextOverflow.clip,
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w700,
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 34,
+                                  color: Color(0xffffffff),
+                                ),
+                              ),
                             ),
+                          ],
+                        ),
+                      ),
+                      Positioned(
+                        top: 38,
+                        right: 2,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            // Implement signout logic and redirection to login page.
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => LoginPage()),
+                            );
+                          },
+                          child: Icon(Icons.logout, color: Colors.white),
+                          style: ElevatedButton.styleFrom(
+                            shape: CircleBorder(),
+                            padding: EdgeInsets.all(12),
+                            primary: Color.fromARGB(255, 67, 114, 245),
                           ),
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 ),
                 Column(
@@ -76,34 +101,37 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Text(
-                                "Kind",
-                                textAlign: TextAlign.start,
-                                overflow: TextOverflow.clip,
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w700,
-                                  fontStyle: FontStyle.normal,
-                                  fontSize: 30,
-                                  color: Color(0xffffffff),
+                          Container(
+                            margin: EdgeInsets.only(top: 16),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Text(
+                                  "Kind",
+                                  textAlign: TextAlign.start,
+                                  overflow: TextOverflow.clip,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w700,
+                                    fontStyle: FontStyle.normal,
+                                    fontSize: 30,
+                                    color: Color(0xffffffff),
+                                  ),
                                 ),
-                              ),
-                              Text(
-                                "Heart",
-                                textAlign: TextAlign.start,
-                                overflow: TextOverflow.clip,
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w700,
-                                  fontStyle: FontStyle.normal,
-                                  fontSize: 30,
-                                  color: Color(0xfffba808),
+                                Text(
+                                  "Heart",
+                                  textAlign: TextAlign.start,
+                                  overflow: TextOverflow.clip,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w700,
+                                    fontStyle: FontStyle.normal,
+                                    fontSize: 30,
+                                    color: Color(0xfffba808),
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ],
                       ),
