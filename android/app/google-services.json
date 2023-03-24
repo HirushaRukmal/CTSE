@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "441303387222",
-    "project_id": "crud-b1a0e",
-    "storage_bucket": "crud-b1a0e.appspot.com"
+    "project_number": "180520313799",
+    "project_id": "kind-heart-4ba7c",
+    "storage_bucket": "kind-heart-4ba7c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:441303387222:android:4bdede909d8b1552987ff7",
+        "mobilesdk_app_id": "1:180520313799:android:4e7abf1fdb10ae05abafe2",
         "android_client_info": {
-          "package_name": "com.example.crud"
+          "package_name": "com.example.kind_heart"
         }
       },
       "oauth_client": [
         {
-          "client_id": "441303387222-2h8rceevlpnh7h3b0l9lr89j6959aa72.apps.googleusercontent.com",
+          "client_id": "180520313799-su696kmvd7dm8nc1qajblbcahlkeours.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCYGI1SiSw3ac3Vv5KqnN0UkHKnvxiCv5g"
+          "current_key": "AIzaSyCkEAB7gfpAGjspFmi4MIxeUTFKFN-c7sc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "441303387222-2h8rceevlpnh7h3b0l9lr89j6959aa72.apps.googleusercontent.com",
+              "client_id": "180520313799-su696kmvd7dm8nc1qajblbcahlkeours.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
