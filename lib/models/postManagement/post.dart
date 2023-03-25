@@ -1,3 +1,4 @@
+//Varibales need for post management
 class Post {
   String id;
   String title;
