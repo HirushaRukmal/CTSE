@@ -27,6 +27,7 @@ class _EditDonation extends State<EditDonation> {
 
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
+  //Bottom navigation
   List<FlutterVizBottomNavigationBarModel> flutterVizBottomNavigationBarItems =
       [
     FlutterVizBottomNavigationBarModel(icon: Icons.home, label: "Home"),
