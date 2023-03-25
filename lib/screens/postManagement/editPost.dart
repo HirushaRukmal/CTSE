@@ -4,6 +4,7 @@ import '../../widgets/FlutterVizBottomNavigationBarModel.dart';
 import 'package:kind_heart/services/postManagement/postService.dart';
 import 'package:intl/intl.dart';
 
+//edit post screen of post management
 class EditPost extends StatefulWidget {
   final String post_id, post_title, post_date, post_description;
 
