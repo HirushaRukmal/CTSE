@@ -8,6 +8,7 @@ import 'package:kind_heart/models/postManagement/post.dart';
 import 'package:kind_heart/services/postManagement/postService.dart';
 import 'postListNew.dart';
 
+//post management screen for post management function
 class ViewPostScreen extends StatefulWidget {
   final String post_id;
   final String post_title;
