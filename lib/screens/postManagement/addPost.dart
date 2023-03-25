@@ -17,6 +17,7 @@ class AddPostScreen extends StatefulWidget {
   }
 }
 
+//Add post screen of pody management
 class _AddPostScreen extends State<AddPostScreen> {
   final title = TextEditingController();
   final date = TextEditingController();
