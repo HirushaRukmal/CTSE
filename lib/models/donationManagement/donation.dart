@@ -1,3 +1,4 @@
+//variables need for donayion management
 class Donation {
   String? did;
   String? name;
