@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Text(
-                      "No",
+                      "Kind",
                       textAlign: TextAlign.start,
                       overflow: TextOverflow.clip,
                       style: TextStyle(
@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      "Hunger",
+                      "Heart",
                       textAlign: TextAlign.start,
                       overflow: TextOverflow.clip,
                       style: TextStyle(
@@ -51,7 +51,7 @@ class HomeScreen extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.fromLTRB(0, 20, 0, 16),
                   child: Text(
-                    "Welcome to No Hunger",
+                    "Welcome to Kind Heart",
                     textAlign: TextAlign.left,
                     overflow: TextOverflow.clip,
                     style: TextStyle(
