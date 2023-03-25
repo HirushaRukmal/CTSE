@@ -1,4 +1,4 @@
-# kind_heart
+# Kind Heart
 
 Mobile Application Development
 
